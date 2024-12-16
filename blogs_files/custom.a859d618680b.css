@@ -1,0 +1,837 @@
+/* TABLE OF CONTENTS 
+- BRAND GUIDE
+- OVERVIEW
+- HOMEPAGE
+- LOGIN PAGE
+- SETTINGS PAGE
+- PATIENTS PAGE
+- PATIENT DASHBOARD
+- PROGRAM CHECKOUT
+- PROGRAM TEMPLATE
+- EXERCISE CATALOG
+- TRAINER APPLICATION
+*/
+/* START BRAND GUIDE */
+@import url("https://web.archive.org/web/20220626000456cs_/https://fonts.googleapis.com/css?family=Open+Sans");
+/* Dark Blue */
+/* Light Blue */
+/* Light Orange */
+/* END BRAND GUIDE */
+/* START OVERVIEW */
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px; }
+
+.primary-color {
+  background-color: #26478D; }
+
+.navbar {
+  border-bottom: #26478D solid 12px; }
+
+.navbar-logo {
+  height: 7vh; }
+
+.nav-link {
+  color: #000000; }
+
+.nav-link:hover,
+.dropdown-item:hover {
+  background-color: #0AB1FE;
+  color: #FFFFFF; }
+
+.nav-item.active .nav-link,
+.nav-pills .nav-link.active,
+.nav-link.active {
+  background-color: #0AB1FE;
+  color: #FFFFFF;
+  font-weight: bold; }
+
+.dropdown-menu {
+  font-size: 14px; }
+
+.navbar-toggler {
+  border: #000000 solid 1px;
+  color: #000000; }
+
+.sub-nav {
+  background-color: #26478D;
+  padding: 8px 0; }
+
+.sub-nav .nav-link {
+  color: #FFFFFF;
+  margin: 0 3px; }
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
+
+hr {
+  width: 100%; }
+
+.portal-container {
+  font-size: 13px; }
+
+.sub-headline {
+  color: #0AB1FE;
+  font-weight: bolder; }
+
+.third-headline {
+  color: #F6A24F;
+  font-weight: bolder; }
+
+.data-card hr {
+  margin: 0; }
+
+.data-card p {
+  margin: 10px 0; }
+
+.card-header {
+  background-color: #26478D;
+  color: #FFFFFF;
+  font-weight: bold; }
+
+.border-right-line {
+  border-right: #E5E5E5 solid 1px; }
+
+.required {
+  color: red; }
+
+.readonly {
+  background-color: #FFFFFF !important; }
+
+.cursor-pointer {
+  cursor: pointer; }
+
+.small-text {
+  font-size: 10px;
+  color: #C44B21; }
+
+textarea {
+  resize: none; }
+
+.capatalize-text {
+  text-transform: capitalize; }
+
+.lowercase-text {
+  text-transform: lowercase; }
+
+#account-dropdown-menu {
+  left: -30px !important; }
+
+.portal-sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px; }
+
+.portal-sidenav-menu {
+  font-size: 18px;
+  border: 1px solid black;
+  padding: 5px;
+  background-color: #F6A24F;
+  color: #FFFFFF; }
+
+.portal-sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px; }
+
+.portal-sidenav .closebtn:hover {
+  text-decoration: none;
+  color: red; }
+
+.interval-button {
+  border: 3px black solid;
+  border-radius: 15px; }
+
+.interval-link {
+  border-radius: 10px !important; }
+
+.loading-overlay {
+  background: #e9e9e9;
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%; }
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid blue;
+  border-bottom: 16px solid blue;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite; }
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg); } }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+/* END OVERVIEW */
+/* START HOMEPAGE */
+header.masthead {
+  margin-top: -20px;
+  position: relative;
+  overflow: hidden;
+  padding-top: calc(7rem + 72px);
+  padding-bottom: 7rem;
+  background: linear-gradient(0deg, #A3ECF2 0%, #52BCD0 100%);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: cover; }
+
+header.masthead .masthead-content {
+  z-index: 1;
+  position: relative; }
+
+header.masthead .masthead-content .masthead-heading {
+  font-size: 4rem;
+  font-weight: bolder; }
+
+header.masthead .masthead-content .masthead-subheading {
+  font-size: 2rem; }
+
+header.masthead .bg-circle {
+  z-index: 0;
+  position: absolute;
+  border-radius: 100%;
+  background: linear-gradient(0deg, #4FB6CD 0%, #8B9AD7 100%); }
+
+header.masthead .bg-circle-1 {
+  height: 90rem;
+  width: 90rem;
+  bottom: -55rem;
+  left: -55rem; }
+
+header.masthead .bg-circle-2 {
+  height: 50rem;
+  width: 50rem;
+  top: -25rem;
+  right: -25rem; }
+
+header.masthead .bg-circle-3 {
+  height: 20rem;
+  width: 20rem;
+  bottom: -10rem;
+  right: 5%; }
+
+header.masthead .bg-circle-4 {
+  height: 30rem;
+  width: 30rem;
+  top: -5rem;
+  right: 35%; }
+
+@media (min-width: 992px) {
+  header.masthead {
+    padding-top: calc(10rem + 55px);
+    padding-bottom: 7rem; }
+  header.masthead .masthead-content .masthead-heading {
+    font-size: 6rem; }
+  header.masthead .masthead-content .masthead-subheading {
+    font-size: 4rem; } }
+
+.main-section {
+  margin-top: 60px;
+  margin-bottom: 60px; }
+
+#how-it-works {
+  color: #01C8DC; }
+
+#about-us {
+  color: white;
+  background-color: #5E8FE3; }
+
+@media screen and (max-width: 1024px) {
+  #about-us .headline {
+    font-size: 45px; } }
+
+#about-us .about-icon {
+  font-size: 150px; }
+
+#contact {
+  color: #01C8DC; }
+
+#footer {
+  background-color: #01C8DC; }
+
+.btn-xl {
+  text-transform: uppercase;
+  padding: 1.5rem 3rem;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem; }
+
+/* END HOMEPAGE */
+/* START LOGIN PAGE */
+.login-page {
+  margin-top: 90px; }
+
+#login-remember-me {
+  margin-left: 5px; }
+
+#login-button {
+  background-color: #0AB1FE;
+  color: #FFFFFF;
+  font-weight: bold; }
+
+@media screen and (min-width: 1200px) {
+  #login-form {
+    padding: 0 50px; } }
+
+/* END LOGIN PAGE */
+/* START SETTINGS PAGE */
+.settings-tab {
+  border: #26478D 1px double; }
+
+/* END SETTINGS PAGE */
+/* START PATIENTS PAGE */
+#patients-search-count {
+  margin-top: 10px; }
+
+.card-record:hover {
+  background-color: #F5F5F5;
+  cursor: pointer; }
+
+.patient-email {
+  color: #0AB1FE; }
+
+#add-program-button {
+  background-color: #0AB1FE;
+  color: #FFFFFF; }
+
+/* END PATIENTS PAGE */
+/* START PATIENT DASHBOARD */
+.dashboard-subnavbar {
+  background-color: #F6A24F; }
+
+.dashboard-subnavbar .nav-link {
+  color: #FFFFFF;
+  font-weight: bolder;
+  font-size: 15px; }
+
+.programs-card-body {
+  max-height: 375px;
+  overflow: auto; }
+
+#program-calendar {
+  font-weight: bolder;
+  max-height: 410px; }
+
+#program-calendar .calendar-th {
+  position: sticky;
+  top: 0; }
+
+#program-calendar .calendar-week-header {
+  background-color: #26478D; }
+
+#program-calendar .calendar-goal-header,
+#program-calendar .calendar-pain-header {
+  background-color: #F6A24F; }
+
+#program-calendar .calendar-header {
+  background-color: #C2C8CB; }
+
+.program-status-indicator-active {
+  color: #FFFFFF;
+  text-align: center;
+  background-color: #26478D; }
+
+.program-status-indicator-closed {
+  color: #FFFFFF;
+  text-align: center;
+  background-color: red; }
+
+.gauge-chart {
+  position: relative;
+  z-index: 0;
+  margin-top: -20px; }
+
+.chart-legend {
+  position: relative;
+  z-index: 1;
+  margin-top: 0px;
+  list-style: none;
+  padding: 0;
+  text-align: center; }
+
+.chart-legend-extended {
+  margin-top: -79px;
+  text-align: center; }
+
+.chart-legend-item {
+  display: inline-block;
+  padding: 0 0 0 14px;
+  font-size: 12px;
+  font-weight: 900; }
+
+.chart-legend-item:before {
+  content: "";
+  display: block;
+  float: left;
+  margin: 4px 0 0 -12px;
+  height: 9px;
+  width: 9px; }
+
+.chart-legend-min-color:before {
+  background: #0AB1FE; }
+
+.chart-legend-avg-color:before {
+  background: yellow; }
+
+.chart-legend-max-color:before {
+  background: #26478D; }
+
+.chart-legend-prescribed-color:before {
+  background: green; }
+
+.chart-legend-min-max-color:before {
+  background: #00E1FF; }
+
+#patient-dashboard-charts #loader {
+  z-index: 20;
+  position: fixed; }
+
+#patient-dashboard-charts .loading-overlay {
+  background: #e9e9e9;
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.5; }
+
+#program-calendar-div,
+#patient-line-graph {
+  padding: 0; }
+
+.fa-check,
+.fa-thumbs-up {
+  color: green; }
+
+.fa-thumbs-down,
+.fa-envelope {
+  color: red; }
+
+#pc-modal-header {
+  background-color: #F6A24F;
+  color: #FFFFFF; }
+
+.pc-data-border-bottom {
+  border-bottom: solid 1px black; }
+
+.calendar-checkbox {
+  margin: 0 10px; }
+
+@media screen and (min-width: 1200px) {
+  .dashboard-subnavbar .nav-link {
+    font-size: 15px; }
+  #progress-chart {
+    margin-top: -30px; }
+  .gauge-chart-div {
+    padding: 0; }
+  #patient-dashboard-sidemenu {
+    position: fixed;
+    z-index: 1; } }
+
+@media screen and (max-width: 1200px) {
+  .dashboard-subnavbar .nav-link {
+    font-size: 10px; }
+  #patient-dashboard-charts {
+    padding: 0; } }
+
+/* END PATIENT DASHBOARD */
+/* START PROGRAM CHECKOUT */
+.exercise-data-results-card {
+  min-height: 300px; }
+
+.program-template-results-card {
+  min-height: 180px; }
+
+.searchable-exercises-content {
+  max-height: 500px;
+  overflow: auto; }
+
+.exercise-thumbnail {
+  max-height: 120px;
+  margin: auto; }
+
+.exercise-thumbnail-list {
+  max-height: 60px; }
+
+#add-attachement {
+  color: white;
+  background-color: #F6A24F;
+  margin: 10px;
+  padding: 5px; }
+
+#add-notes {
+  color: white;
+  background-color: #26478D;
+  margin: 10px;
+  padding: 5px; }
+
+.program-cart {
+  min-height: 400px; }
+
+.cart-body {
+  max-height: 730px;
+  overflow: auto; }
+
+.cart-exercise-card-img {
+  margin: auto;
+  max-height: 50px; }
+
+.cart-buttons {
+  position: absolute;
+  bottom: 0;
+  margin: 15px 11.9px;
+  text-align: center; }
+
+.portal-button {
+  margin: 0px 10px;
+  font-size: 16px;
+  width: 125px;
+  border-radius: 0; }
+
+.main-portal-button {
+  background-color: #26478D; }
+
+.sub-portal-button {
+  background-color: #0AB1FE; }
+
+.exercise-day-button, .program-day-button {
+  font-size: 12px;
+  margin: 0 5px;
+  margin-bottom: 10px !important;
+  height: 30px;
+  width: 60px;
+  border-radius: 0px; }
+
+.exercise-day-button.focus, .program-day-button.focus {
+  box-shadow: 0px 0px transparent; }
+
+.exercise-day-button.active, .program-day-button.active {
+  background-color: #0AB1FE !important; }
+
+.finalize-exercise-card {
+  min-height: 450px; }
+
+.finalize-exercise-header {
+  background-color: #C2C8CB;
+  cursor: pointer; }
+
+.finalize-exercise-header.active {
+  background-color: #F6A24F;
+  cursor: pointer; }
+
+.finalize-exercise-img {
+  max-height: 110px; }
+
+.finalize-exercise-card-body {
+  font-size: 12px;
+  cursor: move; }
+
+.finalize-exercise-day-button {
+  width: 46px !important; }
+
+.program-checkout-page #loader {
+  z-index: 20;
+  position: fixed; }
+
+.program-checkout-page .loading-overlay {
+  background: #e9e9e9;
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.5; }
+
+.refresh-button {
+  font-size: 15px; }
+
+@media screen and (min-width: 1200px) {
+  .program-category-select {
+    float: left;
+    height: 45px;
+    background: #26478D url("https://web.archive.org/web/20220626000456im_/https://extendview-static.s3-us-west-1.amazonaws.com/portal/img/arrow-up-down.png") no-repeat scroll 200px; }
+  .program-category-select select {
+    color: white;
+    background: transparent;
+    font-size: 15px;
+    padding: 2px 10px;
+    height: 45px;
+    width: 236px;
+    border-style: none;
+    -webkit-appearance: none;
+    cursor: pointer; }
+  .program-search-bar {
+    height: 45px;
+    width: 400px;
+    text-align: right; }
+  .dashboard-refresh-button {
+    text-align: right; } }
+
+@media screen and (max-width: 1200px) {
+  .program-category-select {
+    float: left;
+    height: 45px;
+    background: #26478D url("https://web.archive.org/web/20220626000456im_/https://extendview-static.s3-us-west-1.amazonaws.com/portal/img/arrow-up-down.png") no-repeat scroll 200px; }
+  .program-category-select select {
+    color: white;
+    background: transparent;
+    font-size: 15px;
+    padding: 2px 10px;
+    height: 45px;
+    width: 100px;
+    border-style: none;
+    -webkit-appearance: none;
+    cursor: pointer; }
+  .program-search-bar {
+    height: 45px;
+    width: 220px;
+    text-align: right; }
+  .dashboard-refresh-button {
+    text-align: left; } }
+
+/* END PROGRAM CHECKOUT */
+/* START PROGRAM TEMPLATE */
+.program-template-button {
+  margin: 0 70px;
+  border-radius: 0; }
+
+.program-template-page #loader {
+  z-index: 20;
+  position: fixed; }
+
+.program-template-page .loading-overlay {
+  background: #e9e9e9;
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.5; }
+
+.template-exercise-thumbnail {
+  margin: auto; }
+
+/* END PROGRAM TEMPLATE */
+/* START EXERCISE CATALOG */
+@media screen and (min-width: 1200px) {
+  #exercise-catalog-exercises {
+    margin-top: -150px; } }
+
+.workout-category-card {
+  min-height: 100px;
+  position: relative; }
+
+/* END EXERCISE CATALOG */
+/* START TRAINER APPLICATION */
+.trainer-form-box {
+  border: 1px solid black;
+  border-radius: 5px; }
+
+.form-checkboxes-margin {
+  margin-left: 50px; }
+
+/* END TRAINER APPLICATION */
+/* START TRAINER RESULTS */
+.find-trainer-profile-picture {
+  width: 100px; }
+
+.trainer-results-card {
+  min-height: 180px; }
+
+/* END TRAINER RESULTS */
+.overlay-darkblue {
+  position: relative; }
+
+.overlay-blue {
+  position: relative; }
+
+.overlay-white {
+  position: relative; }
+
+.overlay-lightblue {
+  position: relative; }
+
+.overlay-dark {
+  position: relative; }
+
+.overlay-lightdark {
+  position: relative; }
+
+.overlay-darkblue:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(18, 64, 96, 0.6); }
+
+.overlay-blue:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0, 70, 150, 0.6); }
+
+.overlay-white:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.3); }
+
+.overlay-lightblue:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(30, 142, 171, 0.6); }
+
+.overlay-dark:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5); }
+
+.overlay-lightdark:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.3); }
+
+.vertical-horizontal-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.inside-vertical-horizontal-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+
+.align-to-bottom-left {
+  position: absolute;
+  bottom: 0; }
+
+.align-to-bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0; }
+
+.thumbnail-image-div {
+  margin: auto; }
+
+.thumbnail-image-div img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  /*max-height: 85px;*/ }
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px; }
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px; }
+
+hr {
+  background-color: black; }
+
+input.date-picker-widget[type="date"] {
+  position: relative; }
+
+input.date-picker-widget[type="date"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  color: transparent;
+  background: transparent; }
+
+input.time-picker-widget[type="time"] {
+  position: relative; }
+
+input.time-picker-widget[type="time"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  color: transparent;
+  background: transparent; }
+
+.catalog-top-header {
+  top: 45px;
+  background: white; }
+
+/*# sourceMappingURL=custom.css.map */
+/*
+     FILE ARCHIVED ON 00:04:56 Jun 26, 2022 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 04:49:09 Dec 16, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.662
+  exclusion.robots: 0.025
+  exclusion.robots.policy: 0.01
+  esindex: 0.013
+  cdx.remote: 66.797
+  LoadShardBlock: 345.01 (3)
+  PetaboxLoader3.datanode: 130.512 (5)
+  PetaboxLoader3.resolve: 340.865 (2)
+  load_resource: 189.61
+  loaddict: 74.728
+*/
