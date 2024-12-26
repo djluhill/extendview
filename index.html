@@ -608,6 +608,10 @@
         .card {
           min-height: 290px;
         }
+
+        .trainer-img {
+          width: auto;
+        }
       }
     </style>
   </head>
@@ -640,7 +644,7 @@
                 <a class="nav-link" data-scroll href="#about">About Us</a>
               </li> -->
               <li class="nav-item">
-                <a class="nav-link" data-scroll href="/web/20221206001605/https://www.extendview.com/web/blog">Blog</a>
+                <a class="nav-link" data-scroll href="#blog">Blog</a>
               </li>
               <!-- <li class="nav-item">
                 <a class="nav-link" data-scroll href="#newsletter">Newsletter</a>
@@ -745,8 +749,8 @@
     </section><!-- End workouts Section -->
 
     <!-- ======= Workouts Section ======= -->
-    <section id="workouts" class="workouts-desktop">
-      <div class="container">
+    <section id="workouts">
+      <div class="container workouts-desktop">
 
         <div class="section-title">
           <h2>Workouts To Choose From</h2>
@@ -892,10 +896,9 @@
         </div>
 
       </div>
-    </section>
 
-    <section id="workouts" class="workouts-mobile">
-      <div class="container p-0">
+      <!-- Mobile -->
+      <div class="container p-0 workouts-mobile">
 
         <div class="section-title">
           <h2>Workouts To Choose From</h2>
@@ -1204,24 +1207,28 @@
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <div class="row">
-                      <div class="col-4">
+                      <div class="col-6">
                         <div class="card" onclick="dataLayer.push({'event': 'button-click: \'Brittany Noelle\' on homepage' });">
                           <div onclick="$('#trainer-modal1').modal('show');">
-                            <img style="max-height: 425px" class="card-img-top" src="img/trainer-brittany-noelle.jpg" alt="Card image cap">
+                            <div class="text-center">
+                              <img style="max-height: 425px;" class="card-img-top trainer-img" src="img/trainer-brittany-noelle.jpg" alt="Card image cap">
+                            </div>
                             <div class="card-body">
-                              <h5 class="card-title">Brittany Noelle <i class="fas fa-chevron-right"></i></h5>
+                              <h5 class="card-title text-center">Brittany Noelle <i class="fas fa-chevron-right"></i></h5>
                               <p class="card-text">Brittany Noelle is a certified personal trainer and former Tier 3+ Trainer &amp; Master Instructor at Equinox. (Click to read more)</p>
                             </div>
                           </div>
                         </div>
                       </div>
 
-                      <div class="col-4">
+                      <div class="col-6">
                         <div class="card" onclick="dataLayer.push({'event': 'button-click: \'BMadeleine E. Barmark\' on homepage' });">
                           <div onclick="$('#trainer-modal2').modal('show');">
-                            <img style="max-height: 425px" class="card-img-top" src="img/trainer-madeleine-barmark.jpg" alt="Card image cap">
+                            <div class="text-center">
+                              <img style="max-height: 425px;" class="card-img-top trainer-img" src="img/trainer-madeleine-barmark.jpg" alt="Card image cap">
+                            </div>
                             <div class="card-body">
-                              <h5 class="card-title">Madeleine E. Barmark <i class="fas fa-chevron-right"></i></h5>
+                              <h5 class="card-title text-center">Madeleine E. Barmark <i class="fas fa-chevron-right"></i></h5>
                               <p class="card-text">Madeleine E. Barmark began her yoga journey 2004 when she did her first yoga teacher training at Safe Sweden in Stockholm. (Click to read more)</p>
                             </div>
                           </div>
